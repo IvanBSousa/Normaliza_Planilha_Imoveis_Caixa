@@ -4,7 +4,8 @@ import re
 from openpyxl.utils import get_column_letter
 from datetime import date
 
-diretorio = os.path.dirname("C:\\Users\\ivanb\\Downloads\\")
+#diretorio = os.path.dirname("C:\\Users\\ivanb\\Downloads\\")
+diretorio = os.path.join(os.path.expanduser("~"), "Downloads")
 
 def trata_csv_imoveis(nome_arquivo):
     # Lê o arquivo CSV
